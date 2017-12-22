@@ -8,10 +8,10 @@ units . “A string containing any number of SI units multiplied or divided, whi
 contain parenthesis. 
 <br>Examples: “degree”, “degree/minute”, “(degree/(minute*hectare)) ”, “ha*°”
 ### Return a JSON object with two values:
-unit_name : a string of units converted to their SI counterpart. They do not need to be reduced, so
+**unit_name :** a string of units converted to their SI counterpart. They do not need to be reduced, so
 something like “(s/s)” for “(min/min)” is acceptable. The parenthesis should match the input.
 
-multiplication_factor : a floating point number (rounded to 14 decimal places) you can use to convert any
+**multiplication_factor :** a floating point number (rounded to 14 decimal places) you can use to convert any
 input in the original units to the new widely-used SI units.
 
 > **Example:**
